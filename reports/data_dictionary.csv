@@ -1,4 +1,4 @@
-Column,Data Type
+Column,Datatype
 Invoice,object
 StockCode,object
 Description,object
