@@ -1,0 +1,12 @@
+{
+  "start_rows": 1067371,
+  "removed_cancellations": 19494,
+  "removed_null_customer_id": 242257,
+  "removed_null_description": 0,
+  "removed_nonpositive_price": 71,
+  "removed_nonpositive_quantity": 0,
+  "capped_Quantity_outliers": 3987,
+  "capped_Price_outliers": 4710,
+  "final_rows": 805549,
+  "pct_retained": 75.47
+}
