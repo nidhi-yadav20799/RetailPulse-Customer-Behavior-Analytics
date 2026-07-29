@@ -12,9 +12,6 @@ __pycache__/
 # MLflow
 mlruns/
 
-# Processed Data 
-data/processed/
-
 # OS Files
 .DS_Store
 Thumbs.db
