@@ -1,233 +1,313 @@
-# RetailPulse – Customer Behavior Analytics & Revenue Intelligence Platform
+<div align="center">
 
-A Data Science and Machine Learning project that analyzes customer purchasing behavior using the Online Retail II dataset. The project performs Exploratory Data Analysis (EDA), data cleaning, customer feature engineering, RFM-based customer segmentation, customer churn prediction, revenue forecasting, cohort analysis, and will be extended with an interactive Streamlit dashboard.
+# 🛍️ RetailPulse
+### Customer Behavior Analytics & Revenue Intelligence Platform
 
----
+*End-to-end data science pipeline for customer segmentation, churn prediction, revenue forecasting, and retention analysis*
 
-# Project Objectives
+[![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![scikit--learn](https://img.shields.io/badge/scikit--learn-1.9-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)](https://scikit-learn.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-3.3-005A9C?style=for-the-badge)](https://xgboost.readthedocs.io/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.60-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![MLflow](https://img.shields.io/badge/MLflow-3.14-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)](https://mlflow.org/)
 
-- Perform Exploratory Data Analysis (EDA)
-- Build a reproducible data cleaning pipeline
-- Engineer customer-level behavioral features
-- Segment customers using RFM Analysis and K-Means Clustering
-- Predict customer churn using Machine Learning
-- Forecast future revenue using SARIMA & Prophet
-- Perform Cohort Retention Analysis
-- Track experiments with MLflow
-- Build an interactive Streamlit Dashboard
-- Generate an Executive Business Report
+[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square)](#-project-status)
+[![Days Completed](https://img.shields.io/badge/Days%20Completed-8%2F10-brightgreen?style=flat-square)](#-project-status)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](#-license)
 
----
+<br>
 
-# Dataset
+<img src="https://img.shields.io/badge/Segmentation-RFM%20%2B%20K--Means-8A2BE2?style=flat-square"/>
+<img src="https://img.shields.io/badge/Churn%20AUC-0.81-success?style=flat-square"/>
+<img src="https://img.shields.io/badge/Forecasting-SARIMA%20%2B%20Prophet-orange?style=flat-square"/>
+<img src="https://img.shields.io/badge/Explainability-SHAP-red?style=flat-square"/>
 
-**Dataset:** Online Retail II
-
-Contains transactional records of a UK-based online retailer including:
-
-- Invoice
-- StockCode
-- Description
-- Quantity
-- InvoiceDate
-- Price
-- Customer ID
-- Country
+</div>
 
 ---
 
-# Tech Stack
+## 📋 Table of Contents
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Plotly
-- Scikit-Learn
-- XGBoost
-- SHAP
-- Statsmodels
-- Prophet
-- MLflow
-- Streamlit
+- [Overview](#-overview)
+- [Objectives](#-project-objectives)
+- [Dataset](#-dataset)
+- [Tech Stack](#️-tech-stack)
+- [Project Structure](#-project-structure)
+- [Pipeline Walkthrough](#-pipeline-walkthrough)
+- [Key Results](#-key-results)
+- [Generated Artifacts](#-generated-artifacts)
+- [Project Status](#-project-status)
+- [Getting Started](#-getting-started)
+- [Future Work](#-future-work)
+- [Author](#-author)
 
 ---
 
-# Project Structure
+## 🔍 Overview
+
+**RetailPulse** is a full-cycle data science project built on the **Online Retail II** dataset — a UK-based online retailer's transaction history spanning two years. The pipeline takes raw, messy transactional data all the way to executive-ready business intelligence: who the best customers are, who's about to churn, what revenue looks like next quarter, and how well the business retains the customers it acquires.
+
+Every notebook is fully reproducible (`random_state=42` throughout), every cleaning decision is documented and justified, and every model is evaluated on a proper held-out set — no metrics are reported from training data.
+
+---
+
+## 🎯 Project Objectives
+
+| # | Objective |
+|---|---|
+| 1 | Perform Exploratory Data Analysis (EDA) |
+| 2 | Build a reproducible data cleaning pipeline |
+| 3 | Engineer customer-level behavioral features |
+| 4 | Segment customers using RFM Analysis + K-Means Clustering |
+| 5 | Predict customer churn using Machine Learning |
+| 6 | Forecast future revenue using SARIMA & Prophet |
+| 7 | Perform Cohort Retention Analysis |
+| 8 | Track experiments with MLflow |
+| 9 | Build an interactive Streamlit Dashboard |
+| 10 | Generate an Executive Business Report |
+
+---
+
+## 📦 Dataset
+
+**Source:** [Online Retail II](https://archive.ics.uci.edu/dataset/502/online+retail+ii) (UCI Machine Learning Repository)
+
+Transactional records of a UK-based online retailer, Dec 2009 – Dec 2011:
+
+| Column | Description |
+|---|---|
+| `Invoice` | Invoice/transaction number (prefix `C` = cancellation) |
+| `StockCode` | Product/item code |
+| `Description` | Product name |
+| `Quantity` | Units purchased |
+| `InvoiceDate` | Date and time of transaction |
+| `Price` | Unit price (GBP) |
+| `Customer ID` | Unique customer identifier |
+| `Country` | Customer's country |
+
+> 📊 **1,067,371 raw transactions** → **779,414 clean, deduplicated rows** after the Day 3 cleaning pipeline
+
+---
+
+## 🛠️ Tech Stack
+
+<div align="center">
+
+| Category | Tools |
+|---|---|
+| **Language** | ![Python](https://img.shields.io/badge/-Python%203.12-3776AB?style=flat-square&logo=python&logoColor=white) |
+| **Data Wrangling** | ![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy&logoColor=white) |
+| **Visualization** | ![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=flat-square) ![Seaborn](https://img.shields.io/badge/-Seaborn-4C72B0?style=flat-square) ![Plotly](https://img.shields.io/badge/-Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white) |
+| **Machine Learning** | ![scikit-learn](https://img.shields.io/badge/-scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![XGBoost](https://img.shields.io/badge/-XGBoost-005A9C?style=flat-square) |
+| **Explainability** | ![SHAP](https://img.shields.io/badge/-SHAP-FF0051?style=flat-square) |
+| **Time Series** | ![Statsmodels](https://img.shields.io/badge/-Statsmodels-8B0000?style=flat-square) ![Prophet](https://img.shields.io/badge/-Prophet-0866FF?style=flat-square) |
+| **Experiment Tracking** | ![MLflow](https://img.shields.io/badge/-MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white) |
+| **Dashboard** | ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
+| **Statistical Testing** | ![SciPy](https://img.shields.io/badge/-SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white) |
+
+</div>
+
+---
+
+## 📁 Project Structure
 
 ```text
 RetailPulse-Customer-Behavior-Analytics/
 │
-├── data/
-│   ├── raw/
-│   └── processed/
+├── 📂 data/
+│   ├── raw/                      # Original Online Retail II dataset
+│   └── processed/                # Cleaned + engineered datasets
 │
-├── models/
+├── 📂 models/                    # Serialized models (.pkl)
 │
-├── notebooks/
+├── 📂 notebooks/
+│   ├── Day1_Setup.ipynb
+│   ├── Day2_EDA.ipynb
+│   ├── Day3_DataCleaning.ipynb
+│   ├── Day4_FeatureEngineering.ipynb
+│   ├── Day5_Segmentation.ipynb
+│   ├── Day6_ChurnPrediction.ipynb
+│   ├── Day7_RevenueForecasting.ipynb
+│   └── Day8_CohortAnalysis.ipynb
 │
-├── reports/
+├── 📂 reports/                   # Figures, metrics, business KPIs
 │
-├── mlruns/
+├── 📂 mlruns/                    # MLflow tracking store (SQLite backend)
 │
-├── README.md
-├── requirements.txt
-└── .gitignore
+├── 📄 README.md
+├── 📄 requirements.txt
+└── 📄 .gitignore
 ```
 
 ---
 
-# Completed Tasks
+## 🔄 Pipeline Walkthrough
 
-## Day 1
-- Project Setup
-- Environment Configuration
-- Dataset Import
-- Data Dictionary
+<div align="center">
 
-## Day 2
-- Exploratory Data Analysis (EDA)
-- Missing Value Analysis
-- Distribution Analysis
-- Correlation Analysis
-- Business Insights
+| Day | Milestone | Status |
+|:---:|---|:---:|
+| 1️⃣ | Project Setup, Environment Config, Data Dictionary | ✅ |
+| 2️⃣ | EDA — Missing Values, Distributions, Correlations | ✅ |
+| 3️⃣ | Data Cleaning — Dedup, Outlier Capping, Type Normalization | ✅ |
+| 4️⃣ | Feature Engineering — RFM, CLV Approximation | ✅ |
+| 5️⃣ | K-Means Segmentation — Elbow + Silhouette Validated | ✅ |
+| 6️⃣ | Churn Prediction — RF/XGBoost + SHAP | ✅ |
+| 7️⃣ | Revenue Forecasting — SARIMA vs Prophet | ✅ |
+| 8️⃣ | Cohort Retention Analysis | ✅ |
+| 9️⃣ | Streamlit Dashboard | 🚧 |
+| 🔟 | Deployment + Executive Report | 🚧 |
 
-## Day 3
-- Data Cleaning Pipeline
-- Duplicate Removal
-- Missing Value Handling
-- Outlier Treatment
-- Feature Standardization
-- Clean Dataset Generation
-
-## Day 4
-- Customer Feature Engineering
-- RFM Metrics
-- Customer Lifetime Value (CLV) Approximation
-- Behavioral Feature Engineering
-
-## Day 5
-- K-Means Customer Segmentation
-- Elbow Method
-- Silhouette Score Evaluation
-- Customer Profiling
-- MLflow Experiment Tracking
-
-## Day 6
-- Customer Churn Prediction
-- Random Forest & XGBoost Models
-- ROC-AUC Model Evaluation
-- SHAP Explainability
-- Model Serialization
-
-## Day 7
-- Revenue Forecasting
-- Monthly Revenue Time Series
-- SARIMA Forecasting
-- Prophet Forecasting
-- Forecast Model Comparison
-- Three-Month Revenue Forecast
-
-## Day 8
-- Cohort Analysis
-- Customer Retention Matrix
-- Average Order Value (AOV) Analysis
-- Retention Heatmaps
-- Cohort Business Insights
+</div>
 
 ---
 
-# Current Results
+## 📊 Key Results
 
-## Customer Segmentation
-- RFM-based Customer Segmentation
-- K-Means Clustering
-- Silhouette Score Evaluation
-- Customer Cluster Profiling
+### 🎯 Customer Segmentation
+- RFM-based segmentation → 4 business-interpretable clusters (**Champions, Loyal Customers, At Risk, Lost/Low-Value**)
+- K selected via **elbow method + silhouette score** (silhouette = 0.36 at K=4) — not chosen arbitrarily
+- Full customer-level cluster profiling saved to `reports/cluster_profiles.csv`
 
-## Customer Churn Prediction
-- Random Forest Classifier
-- XGBoost Classifier
-- ROC-AUC > 0.80
-- SHAP Feature Importance
-- SHAP Beeswarm Analysis
+### ⚠️ Customer Churn Prediction
+- Binary churn label (180-day recency threshold, ~41% churn rate)
+- Random Forest vs XGBoost compared via 5-fold cross-validation
+- **Held-out test ROC-AUC: 0.81** (exceeds the >0.80 requirement)
+- Recency-derived features deliberately excluded from the model to prevent label leakage
+- SHAP bar + beeswarm plots for full model explainability
 
-## Revenue Forecasting
-- SARIMA Forecast Model
-- Prophet Forecast Model
-- Model Performance Comparison
-- Three-Month Revenue Forecast
+### 📈 Revenue Forecasting
+- Monthly revenue time series (24 complete months; partial final month excluded)
+- **SARIMA(1,1,1)(1,1,1,12)** vs **Prophet** compared on a 3-month held-out window
+- SARIMA selected automatically by MAPE (5.4% vs Prophet's 61.5% on this short series)
+- 3-month forward forecast with 95% confidence intervals
 
-## Cohort Analysis
-- Customer Retention Matrix
-- Cohort Retention Heatmap
-- Average Order Value Heatmap
-- Customer Retention Curve
+### 🔁 Cohort Retention Analysis
+- Monthly acquisition cohorts tracked across 24 months
+- Retention heatmap + average-order-value heatmap by cohort
+- **Steepest drop-off consistently occurs between month 0 and month 1** — the single highest-leverage point for a retention campaign
 
 ---
 
-# Generated Artifacts
+## 🗃️ Generated Artifacts
 
-## Models
-- churn_classifier.pkl
-- kmeans_segmentation.pkl
-- rfm_scaler.pkl
-- country_encoder.pkl
+<details>
+<summary><strong>🤖 Models</strong></summary>
+<br>
 
-## Processed Data
-- retail_cleaned.csv
-- customer_features.csv
-- customer_segments.csv
-- customer_segments_with_churn.csv
-- revenue_forecast_3month.csv
-- forecast_model_comparison.csv
-- cohort_retention_matrix.csv
+| File | Description |
+|---|---|
+| `churn_classifier.pkl` | Trained churn prediction model |
+| `kmeans_segmentation.pkl` | Fitted K-Means clustering model |
+| `rfm_scaler.pkl` | StandardScaler for RFM features |
+| `country_encoder.pkl` | Label encoder for country feature |
 
-## Reports
-- EDA Visualizations
-- Cluster Profiles
-- Churn Model Performance
-- SHAP Feature Importance
-- SHAP Beeswarm
-- Revenue Forecast Plots
-- Forecast Comparison
-- Cohort Retention Heatmap
-- Cohort AOV Heatmap
-- Cohort Retention Curve
+</details>
 
----
+<details>
+<summary><strong>💾 Processed Data</strong></summary>
+<br>
 
-# Project Status
+| File | Description |
+|---|---|
+| `retail_cleaned.csv` | Cleaned, deduplicated transaction data |
+| `customer_features.csv` | RFM + behavioral features per customer |
+| `customer_segments.csv` | Customers with cluster/segment labels |
+| `customer_segments_with_churn.csv` | Segments + churn probability |
+| `revenue_forecast_3month.csv` | 3-month forward revenue forecast |
+| `forecast_model_comparison.csv` | SARIMA vs Prophet performance metrics |
+| `cohort_retention_matrix.csv` | Monthly cohort retention percentages |
 
-| Day | Status |
-|------|--------|
-| Day 1 | ✅ Completed |
-| Day 2 | ✅ Completed |
-| Day 3 | ✅ Completed |
-| Day 4 | ✅ Completed |
-| Day 5 | ✅ Completed |
-| Day 6 | ✅ Completed |
-| Day 7 | ✅ Completed |
-| Day 8 | ✅ Completed |
-| Day 9 | 🚧 Streamlit Dashboard |
-| Day 10 | 🚧 Deployment & Executive Report |
+</details>
+
+<details>
+<summary><strong>📈 Reports & Visualizations</strong></summary>
+<br>
+
+- EDA distribution plots, correlation heatmap, business KPIs
+- Cluster profiles and segment boxplots
+- Churn model ROC curve, confusion matrix
+- SHAP feature importance (bar + beeswarm)
+- Revenue forecast + decomposition plots
+- Cohort retention & AOV heatmaps
+
+</details>
 
 ---
 
-# Future Work
+## 🚦 Project Status
 
-- Streamlit Interactive Dashboard
-- Final Model Deployment
-- Executive Business Report
-- Project Demonstration
+<div align="center">
+
+| Day | Task | Status |
+|:---:|---|:---:|
+| 1 | Project Setup | ✅ Completed |
+| 2 | Exploratory Data Analysis | ✅ Completed |
+| 3 | Data Cleaning Pipeline | ✅ Completed |
+| 4 | Feature Engineering | ✅ Completed |
+| 5 | Customer Segmentation | ✅ Completed |
+| 6 | Churn Prediction | ✅ Completed |
+| 7 | Revenue Forecasting | ✅ Completed |
+| 8 | Cohort Analysis | ✅ Completed |
+| 9 | Streamlit Dashboard | 🚧 In Progress |
+| 10 | Deployment & Executive Report | 🚧 Upcoming |
+
+**Progress: 8 / 10 days complete**
+
+![Progress](https://progress-bar.xyz/80/?title=Complete&width=400&color=4CAF50)
+
+</div>
 
 ---
 
-# Author
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/nidhi-yadav20799/RetailPulse-Customer-Behavior-Analytics.git
+cd RetailPulse-Customer-Behavior-Analytics
+
+# Create and activate a virtual environment
+python -m venv venv
+venv\Scripts\activate      # Windows
+# source venv/bin/activate  # macOS/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch JupyterLab
+jupyter lab
+
+# View MLflow experiment tracking
+mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
+```
+
+---
+
+## 🔮 Future Work
+
+- [ ] Interactive Streamlit dashboard (Overview, Segments, Churn, Forecast, Cohorts tabs)
+- [ ] Deployment to Streamlit Community Cloud
+- [ ] Executive Business Report (PDF) with actionable recommendations
+- [ ] Project demonstration video
+
+---
+
+## 👩‍💻 Author
+
+<div align="center">
 
 **Nidhi Yadav**
 
-B.Sc. Data Science Graduate
 
-GitHub: https://github.com/nidhi-yadav20799
+[![GitHub](https://img.shields.io/badge/GitHub-nidhi--yadav20799-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nidhi-yadav20799)
+
+</div>
+
+---
+
+<div align="center">
+
+⭐ *If you find this project useful, consider giving it a star on GitHub!* ⭐
+
+</div>
