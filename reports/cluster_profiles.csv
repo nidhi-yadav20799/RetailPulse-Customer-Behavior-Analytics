@@ -1,0 +1,5 @@
+Cluster,CustomerCount,AvgRecency,AvgFrequency,AvgMonetary,AvgCLV,PctOfCustomers,AvgRFM_Total,Segment
+0,982,41.5,22.0,11555.8,11555.8,16.7,14.169042769857434,Champions
+2,1892,100.4,5.4,1808.0,1808.0,32.2,11.066596194503171,Loyal Customers
+3,1632,494.2,1.7,494.1,494.1,27.8,5.083946078431373,Lost/Low-Value
+1,1372,106.5,1.7,412.0,412.0,23.3,7.130466472303207,At Risk
