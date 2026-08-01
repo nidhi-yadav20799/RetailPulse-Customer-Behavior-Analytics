@@ -60,6 +60,7 @@ https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit
 - [Pipeline Walkthrough](#-pipeline-walkthrough)
 - [Key Results](#-key-results)
 - [Dashboard Preview](#-dashboard-preview)
+- [Project Demo](#-project-demo)
 - [Generated Artifacts](#-generated-artifacts)
 - [Project Status](#-project-status)
 - [Getting Started](#-getting-started)
@@ -254,6 +255,17 @@ RetailPulse-Customer-Behavior-Analytics/
 <!-- TODO: Replace the generic "Dashboard View N" captions above with descriptive titles once you confirm what each screenshot shows. -->
 
 </div>
+
+---
+
+## 🎥 Project Demo
+
+A complete walkthrough of the RetailPulse project demonstrating the Streamlit dashboard, customer segmentation, churn prediction, revenue forecasting, cohort analysis, interactive visualizations, and overall project workflow.
+
+Watch the complete RetailPulse project demonstration below:
+
+▶️ **Demo Video:**  
+https://drive.google.com/file/d/1vvZdEqDOIlme-oLN5A5H9sKsQM8joj58/view?usp=sharing
 
 ---
 
