@@ -242,11 +242,16 @@ RetailPulse-Customer-Behavior-Analytics/
 
 <div align="center">
 
-| Overview | Churn Prediction | Revenue Forecast |
+| Dashboard View 1 | Dashboard View 2 | Dashboard View 3 |
 |:---:|:---:|:---:|
-| ![Dashboard Overview](assets/dashboard_overview.png) | ![Churn Prediction](assets/churn_prediction.png) | ![Revenue Forecast](assets/revenue_forecast.png) |
+| ![Dashboard View 1](assets/Screenshot%202026-08-01%20223940.png) | ![Dashboard View 2](assets/Screenshot%202026-08-01%20225950.png) | ![Dashboard View 3](assets/Screenshot%202026-08-01%20230052.png) |
+
+| Dashboard View 4 | Dashboard View 5 | Dashboard View 6 |
+|:---:|:---:|:---:|
+| ![Dashboard View 4](assets/Screenshot%202026-08-01%20230113.png) | ![Dashboard View 5](assets/Screenshot%202026-08-01%20230144.png) | ![Dashboard View 6](assets/Screenshot%202026-08-01%20230246.png) |
 
 *Screenshots of the live Streamlit dashboard — segments, churn risk, and forecasts at a glance.*
+<!-- TODO: Replace the generic "Dashboard View N" captions above with descriptive titles once you confirm what each screenshot shows. -->
 
 </div>
 
