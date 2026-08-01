@@ -14,9 +14,9 @@
 [![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)](#-project-status)
 [![Days Completed](https://img.shields.io/badge/Days%20Completed-10%2F10-brightgreen?style=flat-square)](#-project-status)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](#-license)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app)
 [![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nidhi-yadav20799/RetailPulse-Customer-Behavior-Analytics)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=streamlit)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=streamlit)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app)
 
 <br>
 
@@ -33,9 +33,9 @@
 
 <div align="center">
 
-### 👉 [**Launch the RetailPulse Dashboard**](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app) 👈
+### 👉 [**Launch the RetailPulse Dashboard**](https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app) 👈
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app)
 
 *Explore live customer segments, churn risk scores, revenue forecasts, and cohort retention — all in one interactive dashboard.*
 
@@ -45,7 +45,7 @@
 
 ## 🌐 Live Demo
 **Streamlit Dashboard**
-https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app
+https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app
 
 ---
 
@@ -367,7 +367,7 @@ mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
 
 RetailPulse is fully deployed on **Streamlit Community Cloud**, making the entire analytics pipeline accessible without any local setup.
 
-- 🔗 **Live App:** [retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+- 🔗 **Live App:** [retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app](https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app)
 - ⚙️ **Entry point:** `dashboard/app.py`
 - 🔄 **Auto-redeploy** on every push to the main branch
 - 📦 Dependencies managed via `requirements.txt`
@@ -414,10 +414,10 @@ RetailPulse translates raw transactional data into decisions a retail business c
 
 
 [![GitHub](https://img.shields.io/badge/GitHub-nidhi--yadav20799-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nidhi-yadav20799)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app)
 
 ### 🌐 Live Application
-https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app
+https://retailpulse-customer-behavior-analytics-cyay3aaqzwvzi6tlgucqga.streamlit.app
 
 </div>
 
