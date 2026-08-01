@@ -11,9 +11,12 @@
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.60-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![MLflow](https://img.shields.io/badge/MLflow-3.14-0194E2?style=for-the-badge&logo=mlflow&logoColor=white)](https://mlflow.org/)
 
-[![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square)](#-project-status)
-[![Days Completed](https://img.shields.io/badge/Days%20Completed-8%2F10-brightgreen?style=flat-square)](#-project-status)
+[![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square)](#-project-status)
+[![Days Completed](https://img.shields.io/badge/Days%20Completed-10%2F10-brightgreen?style=flat-square)](#-project-status)
 [![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](#-license)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit%20Cloud-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+[![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/nidhi-yadav20799/RetailPulse-Customer-Behavior-Analytics)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-success?style=for-the-badge&logo=streamlit)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
 
 <br>
 
@@ -26,18 +29,43 @@
 
 ---
 
+## 🎥 Live Demo
+
+<div align="center">
+
+### 👉 [**Launch the RetailPulse Dashboard**](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app) 👈
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+
+*Explore live customer segments, churn risk scores, revenue forecasts, and cohort retention — all in one interactive dashboard.*
+
+</div>
+
+---
+
+## 🌐 Live Demo
+**Streamlit Dashboard**
+https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app
+
+---
+
 ## 📋 Table of Contents
 
 - [Overview](#-overview)
+- [Features](#-features)
 - [Objectives](#-project-objectives)
 - [Dataset](#-dataset)
 - [Tech Stack](#️-tech-stack)
 - [Project Structure](#-project-structure)
 - [Pipeline Walkthrough](#-pipeline-walkthrough)
 - [Key Results](#-key-results)
+- [Dashboard Preview](#-dashboard-preview)
 - [Generated Artifacts](#-generated-artifacts)
 - [Project Status](#-project-status)
 - [Getting Started](#-getting-started)
+- [Deployment](#-deployment)
+- [Business Impact](#-business-impact)
+- [Key Achievements](#-key-achievements)
 - [Future Work](#-future-work)
 - [Author](#-author)
 
@@ -48,6 +76,23 @@
 **RetailPulse** is a full-cycle data science project built on the **Online Retail II** dataset — a UK-based online retailer's transaction history spanning two years. The pipeline takes raw, messy transactional data all the way to executive-ready business intelligence: who the best customers are, who's about to churn, what revenue looks like next quarter, and how well the business retains the customers it acquires.
 
 Every notebook is fully reproducible (`random_state=42` throughout), every cleaning decision is documented and justified, and every model is evaluated on a proper held-out set — no metrics are reported from training data.
+
+The project is now **100% complete** — from raw data to a live, deployed, interactive dashboard and executive business report.
+
+---
+
+## ✨ Features
+
+- 📊 **Interactive Plotly Visualizations** — dynamic, drill-down charts across every module
+- 🎨 **Premium Glassmorphism UI** — modern, polished dashboard styling
+- 📱 **Responsive Dashboard** — works cleanly across desktop and mobile viewports
+- 📥 **Export Filtered CSV** — download filtered customer/segment data on demand
+- 🧩 **Customer Segmentation** — RFM + K-Means clustering into business-ready segments
+- ⚠️ **Churn Prediction** — ML-driven churn risk scoring per customer
+- 🔬 **SHAP Explainability** — transparent, feature-level model interpretability
+- 📈 **Revenue Forecasting** — SARIMA vs Prophet, best model auto-selected
+- 🔁 **Cohort Analysis** — monthly acquisition cohort retention & AOV heatmaps
+- 🧪 **MLflow Tracking** — full experiment tracking and model versioning
 
 ---
 
@@ -63,8 +108,8 @@ Every notebook is fully reproducible (`random_state=42` throughout), every clean
 | 6 | Forecast future revenue using SARIMA & Prophet |
 | 7 | Perform Cohort Retention Analysis |
 | 8 | Track experiments with MLflow |
-| 9 | Build an interactive Streamlit Dashboard |
-| 10 | Generate an Executive Business Report |
+| 9 | Build a premium interactive Streamlit Dashboard |
+| 10 | Deploy to the cloud and deliver an Executive Business Report |
 
 ---
 
@@ -103,6 +148,7 @@ Transactional records of a UK-based online retailer, Dec 2009 – Dec 2011:
 | **Time Series** | ![Statsmodels](https://img.shields.io/badge/-Statsmodels-8B0000?style=flat-square) ![Prophet](https://img.shields.io/badge/-Prophet-0866FF?style=flat-square) |
 | **Experiment Tracking** | ![MLflow](https://img.shields.io/badge/-MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white) |
 | **Dashboard** | ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
+| **Deployment** | ![Streamlit Cloud](https://img.shields.io/badge/-Streamlit%20Community%20Cloud-FF4B4B?style=flat-square&logo=streamlit&logoColor=white) |
 | **Statistical Testing** | ![SciPy](https://img.shields.io/badge/-SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white) |
 
 </div>
@@ -130,7 +176,10 @@ RetailPulse-Customer-Behavior-Analytics/
 │   ├── Day7_RevenueForecasting.ipynb
 │   └── Day8_CohortAnalysis.ipynb
 │
-├── 📂 reports/                   # Figures, metrics, business KPIs
+├── 📂 dashboard/
+│   └── app.py                    # Premium Streamlit dashboard (deployed)
+│
+├── 📂 reports/                   # Figures, metrics, business KPIs, executive report
 │
 ├── 📂 mlruns/                    # MLflow tracking store (SQLite backend)
 │
@@ -147,16 +196,16 @@ RetailPulse-Customer-Behavior-Analytics/
 
 | Day | Milestone | Status |
 |:---:|---|:---:|
-| 1️⃣ | Project Setup, Environment Config, Data Dictionary | ✅ |
-| 2️⃣ | EDA — Missing Values, Distributions, Correlations | ✅ |
-| 3️⃣ | Data Cleaning — Dedup, Outlier Capping, Type Normalization | ✅ |
-| 4️⃣ | Feature Engineering — RFM, CLV Approximation | ✅ |
-| 5️⃣ | K-Means Segmentation — Elbow + Silhouette Validated | ✅ |
-| 6️⃣ | Churn Prediction — RF/XGBoost + SHAP | ✅ |
-| 7️⃣ | Revenue Forecasting — SARIMA vs Prophet | ✅ |
-| 8️⃣ | Cohort Retention Analysis | ✅ |
-| 9️⃣ | Streamlit Dashboard | 🚧 |
-| 🔟 | Deployment + Executive Report | 🚧 |
+| 1️⃣ | Project Setup, Environment Config, Data Dictionary | ✅ Completed |
+| 2️⃣ | EDA — Missing Values, Distributions, Correlations | ✅ Completed |
+| 3️⃣ | Data Cleaning — Dedup, Outlier Capping, Type Normalization | ✅ Completed |
+| 4️⃣ | Feature Engineering — RFM, CLV Approximation | ✅ Completed |
+| 5️⃣ | K-Means Segmentation — Elbow + Silhouette Validated | ✅ Completed |
+| 6️⃣ | Churn Prediction — RF/XGBoost + SHAP | ✅ Completed |
+| 7️⃣ | Revenue Forecasting — SARIMA vs Prophet | ✅ Completed |
+| 8️⃣ | Cohort Retention Analysis | ✅ Completed |
+| 9️⃣ | Premium Streamlit Dashboard | ✅ Completed |
+| 🔟 | Streamlit Cloud Deployment + Executive Business Report | ✅ Completed |
 
 </div>
 
@@ -186,6 +235,20 @@ RetailPulse-Customer-Behavior-Analytics/
 - Monthly acquisition cohorts tracked across 24 months
 - Retention heatmap + average-order-value heatmap by cohort
 - **Steepest drop-off consistently occurs between month 0 and month 1** — the single highest-leverage point for a retention campaign
+
+---
+
+## 🖼️ Dashboard Preview
+
+<div align="center">
+
+| Overview | Churn Prediction | Revenue Forecast |
+|:---:|:---:|:---:|
+| ![Dashboard Overview](assets/dashboard_overview.png) | ![Churn Prediction](assets/churn_prediction.png) | ![Revenue Forecast](assets/revenue_forecast.png) |
+
+*Screenshots of the live Streamlit dashboard — segments, churn risk, and forecasts at a glance.*
+
+</div>
 
 ---
 
@@ -233,6 +296,19 @@ RetailPulse-Customer-Behavior-Analytics/
 
 </details>
 
+<details>
+<summary><strong>🖥️ Application & Deployment</strong></summary>
+<br>
+
+| Item | Description |
+|---|---|
+| `dashboard/app.py` | Premium Streamlit dashboard application |
+| Executive Business Report | Stakeholder-facing summary of findings & recommendations |
+| Streamlit Dashboard (Live) | Deployed on Streamlit Community Cloud |
+| MLflow Tracking | Full experiment history in `mlruns/` |
+
+</details>
+
 ---
 
 ## 🚦 Project Status
@@ -249,12 +325,12 @@ RetailPulse-Customer-Behavior-Analytics/
 | 6 | Churn Prediction | ✅ Completed |
 | 7 | Revenue Forecasting | ✅ Completed |
 | 8 | Cohort Analysis | ✅ Completed |
-| 9 | Streamlit Dashboard | 🚧 In Progress |
-| 10 | Deployment & Executive Report | 🚧 Upcoming |
+| 9 | Premium Streamlit Dashboard | ✅ Completed |
+| 10 | Streamlit Cloud Deployment + Executive Report | ✅ Completed |
 
-**Progress: 8 / 10 days complete**
+**Progress: 10 / 10 days complete — Project 100% Finished 🎉**
 
-![Progress](https://progress-bar.xyz/80/?title=Complete&width=400&color=4CAF50)
+![Progress](https://progress-bar.xyz/100/?title=Complete&width=400&color=4CAF50)
 
 </div>
 
@@ -275,8 +351,11 @@ venv\Scripts\activate      # Windows
 # Install dependencies
 pip install -r requirements.txt
 
-# Launch JupyterLab
+# Launch JupyterLab (to explore the notebooks)
 jupyter lab
+
+# Run the Streamlit dashboard locally
+streamlit run dashboard/app.py
 
 # View MLflow experiment tracking
 mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
@@ -284,12 +363,46 @@ mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
 
 ---
 
+## ☁️ Deployment
+
+RetailPulse is fully deployed on **Streamlit Community Cloud**, making the entire analytics pipeline accessible without any local setup.
+
+- 🔗 **Live App:** [retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+- ⚙️ **Entry point:** `dashboard/app.py`
+- 🔄 **Auto-redeploy** on every push to the main branch
+- 📦 Dependencies managed via `requirements.txt`
+
+---
+
+## 💼 Business Impact
+
+RetailPulse translates raw transactional data into decisions a retail business can act on:
+
+- **Marketing:** Target "Champions" and "Loyal Customers" segments with retention offers; deprioritize spend on "Lost/Low-Value" segments
+- **Retention:** Focus intervention budget on the month-0-to-month-1 window, identified as the steepest customer drop-off point
+- **Churn Prevention:** Proactively flag high-risk customers (via the 0.81 AUC churn model) for win-back campaigns before they lapse
+- **Revenue Planning:** Use the 3-month SARIMA forecast with confidence intervals to inform inventory, staffing, and cash-flow planning
+- **Executive Reporting:** The Executive Business Report distills all findings into stakeholder-ready recommendations
+
+---
+
+## 🏆 Key Achievements
+
+- ✅ **End-to-End Data Science Pipeline** — from raw transactional data to deployed product
+- ✅ **Machine Learning** — customer segmentation and churn classification
+- ✅ **Explainable AI** — SHAP-based model interpretability throughout
+- ✅ **Time Series Forecasting** — SARIMA vs Prophet, rigorously benchmarked
+- ✅ **Executive Dashboard** — premium, interactive Streamlit application
+- ✅ **Production Deployment** — live on Streamlit Community Cloud
+
+---
+
 ## 🔮 Future Work
 
-- [ ] Interactive Streamlit dashboard (Overview, Segments, Churn, Forecast, Cohorts tabs)
-- [ ] Deployment to Streamlit Community Cloud
-- [ ] Executive Business Report (PDF) with actionable recommendations
-- [ ] Project demonstration video
+- [ ] Add automated model retraining pipeline (CI/CD)
+- [ ] Extend forecasting to per-country / per-segment granularity
+- [ ] Add authentication for role-based dashboard access
+- [ ] Record a project demonstration video
 
 ---
 
@@ -301,6 +414,10 @@ mlflow ui --backend-store-uri sqlite:///mlruns/mlflow.db
 
 
 [![GitHub](https://img.shields.io/badge/GitHub-nidhi--yadav20799-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/nidhi-yadav20799)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)](https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app)
+
+### 🌐 Live Application
+https://retailpulse-customer-behavior-analytics-cyay3aaqzwwzi6tlgucqga.streamlit.app
 
 </div>
 
